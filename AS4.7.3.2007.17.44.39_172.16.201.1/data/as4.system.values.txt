@@ -1,0 +1,35 @@
+QALWOBJRST|[*ALL       ]|Allow object restore option
+QALWUSRDMN|[*ALL       ]|Allow user domain objects in libraries
+QATNPGM|*NONE               |Attention program
+QAUDCTL|[*NOTAVL    ]|Auditing control
+QAUDENDACN|*NOTAVL   |Auditing end action
+QAUDFRCLVL|-1|Force auditing data
+QAUDLVL|[*NOTAVL    ]|Security auditing level
+QAUDLVL2|[*NOTAVL    ]|Enhanced security auditing level
+QAUTOVRT|9999|Autoconfigure virtual devices
+QCRTAUT|*CHANGE   |Create default public authority
+QCRTOBJAUD|*NOTAVL   |Create object auditing
+QFRCCVNRST|3|Force conversion on restore
+QINACTITV|0000000045|Inactive job time-out
+QINACTMSGQ|[*ENDJOB    ]|Inactive job message queue
+QLMTDEVSSN|1|Limit device sessions
+QLMTSECOFR|0|Limit security officer device access
+QMAXSGNACN|2|Action to take for failed signon attempts
+QMAXSIGN|000005|Maximum sign-on attempts allowed
+QPWDEXPITV|000090|Password expiration interval
+QPWDLMTAJC|0|Limit adjacent digits in password
+QPWDLMTCHR|*NONE     |Limit characters in password
+QPWDLMTREP|0|Limit repeating characters in password
+QPWDLVL|0|Password Level
+QPWDMAXLEN|10|Maximum password length
+QPWDMINLEN|6|Minimum password length
+QPWDPOSDIF|0|Limit password character positions
+QPWDRQDDGT|0|Require digit in password
+QPWDRQDDIF|1|Duplicate password control
+QPWDVLDPGM|*NONE               |Password validation program
+QRETSVRSEC|1|Retain server security data
+QRMTSIGN|*FRCSIGNON          |Remote sign-on control
+QSECURITY|40|System security level
+QSHRMEMCTL|1|Shared memory control
+QUSEADPAUT|*NONE     |Use adopted authority
+QVFYOBJRST|3|Verify object on restore

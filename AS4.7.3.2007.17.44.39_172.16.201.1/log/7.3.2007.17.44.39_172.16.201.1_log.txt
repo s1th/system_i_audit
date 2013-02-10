@@ -1,0 +1,7 @@
+*** AS4Data::online_connect() call successful ***
+*** AS4Data::online_get_system_values() call successful ***
+*** AS4Data::online_get_user_profile_data() call successful ***
+*** AS4Data::online_get_usrprf_obj_data() call successful ***
+*** AS4Data::online_analyze_dft_pwd() call successful ***
+*** AS4Data::online_get_objaut() call successful ***
+*** AS4Data::disconnect() call successful ***
