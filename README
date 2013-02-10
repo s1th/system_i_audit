@@ -2,9 +2,11 @@ system_i_audit
 ==============
 
 Description:
-This project performs an audit of system values, user/group profiles and privileges, and object authorities.
-It can also track changes made to these areas over time by performing a diff against two runs of the script.  
-This code is older and would require tweaking to work properly.
+This project performs an audit of system values, user/group profiles
+and privileges, and object authorities.  It can also track changes 
+made to these areas over time by performing a diff against two runs
+of the script. This code is older and may require tweaking to 
+work properly.
 
 Usage:
 
