@@ -1,0 +1,52 @@
+system_i_audit
+==============
+
+Description:
+This project performs an audit of system values, user/group profiles and privileges, and object authorities.
+It can also track changes made to these areas over time by performing a diff against two runs of the script.  
+This code is older and would require tweaking to work properly.
+
+Usage:
+
+as4.pl [-s IP] [-u username] [-p password] [--run [report|diff]] [--kill-chkpt] [-h]
+
+-s            IP Address of AS400 server to be analyzed.
+              This is a required parameter, even if doing a
+              diff report as it is used in some file naming
+              conventions.
+			  
+-u            Username to use to log into the AS400.
+
+-p            Password to use to log into the AS400.","\n";
+
+--run         The type of run the script should perform.
+              This is ALWAYS a required parameter, and is either 
+              'report' for a normal report run or a 'diff' for a
+              diff of two previous runs.
+
+--kill-chkpt  Specify this option to have the script kill 
+              the checkpoint services.  Generally this
+              should not be required, but may be at SMWE.
+
+-h            Print this help.
+
+Example Sessions:
+|-----------------------------------------------------------|
+| cmd> as4.pl -s 192.168.1.24 -u xyz -p mypwd --run report  |
+|-----------------------------------------------------------|
+*This will perform a normal audit of the server at 192.168.1.24.
+It will log in with the username and password specified with -u
+and -p.  Note that this will use the network to run commands
+on the server and extract the necessary data to perform the
+audit.
+
+|------------------------------------------------------|
+| cmd> as4.pl -s 182.43.45.66 --run diff               |
+|                                                      |
+| Enter the PRE run directory: c:\pre\run\directory    |
+|                                                      |
+| Enter the POST run directory: c:\post\run\directory  |
+|------------------------------------------------------|
+*This will perform a diff of two previous runs log files.
+All that required is to specify the path the previous runs
+top-level directory (i.e. the as4.1.1.2007.6.6.6 directory).
